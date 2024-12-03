@@ -14,17 +14,16 @@ type ADRData struct {
     Consequences string
 }
 
-adrData := ADRData{
-    ID:            "0001",
-    Title:         "Adopt Markdown for ADRs",
-    Status:        "Accepted",
-    Context:       "We need a consistent and easy-to-use format for documenting architecture decisions.",
-    Decision:      "We will use Markdown files for storing ADRs.",
-    Consequences:  "ADRs will be easy to read and edit.",
-}
-
 func main() {
     // Create a new template and parse the template file
+    adrData := ADRData{
+        ID:            "0001",
+        Title:         "Adopt Markdown for ADRs",
+        Status:        "Accepted",
+        Context:       "We need a consistent and easy-to-use format for documenting architecture decisions.",
+        Decision:      "We will use Markdown files for storing ADRs.",
+        Consequences:  "ADRs will be easy to read and edit.",
+    }
     tmpl, err := template.ParseFiles("adr_template.tmpl")
     if err != nil {
         panic(err)
