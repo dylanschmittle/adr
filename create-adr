@@ -1,0 +1,2 @@
+#!/bin/sh
+go run markdown-adr.go > adr_0001.md
