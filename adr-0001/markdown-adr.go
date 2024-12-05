@@ -11,7 +11,7 @@ type ADRData struct {
     Status        string
     Context       string
     Decision      string
-    Consequences string
+    Consequences  string
 }
 
 func main() {
